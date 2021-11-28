@@ -1,5 +1,21 @@
-export const theme = {
+import { ThemeProps } from 'styled-components';
+
+export interface ThemeType {
   colors: {
-    green: '#00d68f'
+    [x: string]: string;
+  };
+}
+
+export const theme: ThemeProps<ThemeType> = {
+  theme: {
+    colors: {
+      green: '#00d68f',
+      green100: '#43e97b',
+      green200: '#38f9d7',
+
+      danger500: '#FF3D71',
+      primaryGradient: 'linear-gradient(90deg, #43e97b 0%, #38f9d7 100%)',
+      basic100: '#fff'
+    }
   }
 };
