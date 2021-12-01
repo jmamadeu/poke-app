@@ -4,7 +4,6 @@ export const Container = styled.main`
   height: 100vh;
   display: grid;
   grid-template-columns: 50px 1fr;
-  background-image: url('src/assets/background.svg');
 `;
 
 export const SideBarContainer = styled.aside``;
@@ -23,11 +22,11 @@ const item = css`
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  cursor: pointer;
+
   border-radius: 1.563rem;
 `;
 
-export const SidebarItem = styled.li`
+export const SidebarItem = styled.li<{ captured?: boolean }>`
   ${item}
 
   background: ${(props) => props.theme.colors.green};
@@ -36,6 +35,17 @@ export const SidebarItem = styled.li`
   border: 2px solid ${(props) => props.theme.colors.dark};
 
   font-size: 1.5rem;
+
+  ${(props) =>
+    props.captured
+      ? css`
+          color: red;
+          background: ${(props) => props.theme.colors.basic100};
+          border: 2px solid ${(props) => props.theme.colors.green};
+          font-size: 1rem;
+          cursor: pointer;
+        `
+      : ''}
 `;
 
 export const SidebarItemButton = styled.button`
