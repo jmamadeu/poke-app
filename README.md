@@ -6,6 +6,8 @@ Web app to play with pokemons using the Pokemon free and public API
 
 ![Preview Code](https://s10.gifyu.com/images/pokemon-app-test.gif)
 
+[See preview](https://s10.gifyu.com/images/pokemon-app-test.gif)
+
 ### Core Techs
 - [React](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
