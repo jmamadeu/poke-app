@@ -17,7 +17,12 @@ export const theme: ThemeProps<ThemeType> = {
       danger500: '#FF3D71',
       primaryGradient: 'linear-gradient(90deg, #43e97b 0%, #38f9d7 100%)',
       basic100: '#fff',
-      dark: '#231F20'
+      dark: '#231F20',
+      neutral100: '#E4E9F2',
+      neutral200: '#F7F9FC',
+      neutral500: '#C5CEE0',
+      neutral700: '#2E3A59',
+      neutral900: '#2E3A59'
     }
   }
 };

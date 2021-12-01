@@ -1,13 +1,5 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.main`
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 50px 1fr;
-
-  background: ${(props) => props.theme.colors.green100};
-`;
-
 export const SideBarContainer = styled.aside``;
 
 export const SidebarItemContainer = styled.ul`
@@ -60,40 +52,4 @@ export const SidebarItemButton = styled.button`
   background: ${(props) => props.theme.colors.danger500};
 
   border: 2px solid ${(props) => props.theme.colors.danger200};
-`;
-
-export const Content = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const PokemonButton = styled.button`
-  background: ${(props) => props.theme.colors.danger500};
-  border: 0;
-  border-radius: 8px;
-
-  padding: 10px;
-  width: 200px;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-
-  color: #fff;
-  font-size: 1rem;
-
-  cursor: pointer;
-
-  transition: filter 0.2s;
-
-  &:hover {
-    filter: brightness(0.8);
-  }
-
-  &:disabled {
-    filter: brightness(0.8);
-    cursor: not-allowed;
-  }
 `;
